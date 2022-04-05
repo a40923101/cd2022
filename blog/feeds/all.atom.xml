@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-04-05T17:41:00+08:00</updated><entry><title>2022 Spring CD 課程</title><link href="./w6_40923101.html" rel="alternate"></link><published>2022-04-05T11:00:00+08:00</published><updated>2022-04-05T17:41:00+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-05:./w6_40923101.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-04-05T18:53:46+08:00</updated><entry><title>2022 Spring CD 課程</title><link href="./w6_40923101.html" rel="alternate"></link><published>2022-04-05T11:00:00+08:00</published><updated>2022-04-05T18:53:46+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-05:./w6_40923101.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 
 
-&lt;h2&gt;小組上傳&lt;/h2&gt;
-&lt;p&gt;先進去老師倉儲的cmsimde site&lt;/p&gt;
-&lt;p&gt;Python 可以用來開發單機版的視窗程式套件 Pyslvs-UI&lt;/p&gt;
-&lt;p&gt;Python 可以用來開發網際版的內容管理系統 CMSiMDE&lt;/p&gt;
-&lt;p&gt;Python 可以用來控制 CoppeliaSim 與 Webots 虛擬環境中的機電系統&lt;/p&gt;
-&lt;h2&gt;W3作業&lt;/h2&gt;
+&lt;h2&gt;W2小組分組&lt;/h2&gt;
+&lt;p&gt;分組名單&lt;/p&gt;
+&lt;p&gt;第1組: 40923101 40923103 40923108 40923119 40923137 40923154 40923156 40971134 &lt;/p&gt;
+&lt;p&gt;第2組: 40923102 40923104 40923105 40923106 40923107 40923110 40923121 40923153&lt;/p&gt;
+&lt;p&gt;第3組: 40923129 40923146 40923148 40923109 40923111 40923114 40923115 40923122&lt;/p&gt;
+&lt;p&gt;第4組: 40923116 40923124 40923125 40923126 40923127 40923128 40923138 40923143 &lt;/p&gt;
+&lt;p&gt;第5組: 40923131 40923133 40923134 40923135 40923139 40923142 40923151 40923123&lt;/p&gt;
+&lt;p&gt;第6組: 40923113 40923130 40923140 40923144 40923145 40923149 40923150 40923152&lt;/p&gt;
+&lt;p&gt;第7組: 40923136 40923147 40923157 40823132 40823143 40923117 40923118 40923120&lt;/p&gt;
+&lt;h2&gt;W3 NX1980作業&lt;/h2&gt;
 &lt;p&gt;指定任務:有 38 個比較接近 NX1980 版本功能的教學影片，以 Wink 影片互相對照的方式採 NX1980 執行操作進行整理，完成後將所負責的 Wink 教學影片嵌入個人與大分組的 w3 中。 &lt;/p&gt;
-&lt;p&gt;NX Rendering &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://youtu.be/3R95I8Ht79Y"&gt;NX Rendering&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;NX的渲染功能，可以選擇自己想設計的顏色、線條、材質及背景等等。&lt;/p&gt;
-&lt;p&gt;NX CAM Introduction&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://youtu.be/cdzQR-WXv-o"&gt;NX CAM Introduction&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;NX CAM 簡介，講解如何設置程序進行工件模擬加工。&lt;/p&gt;
-&lt;p&gt;NX Sheet Metal Introduction&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://youtu.be/CYOwCcvc0Og"&gt;NX Sheet Metal Introduction&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;NX鈑金介紹，利用板金工具在繪圖時會更加便利。&lt;/p&gt;
-&lt;p&gt;Adding a texture with Siemens NX&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://youtu.be/zHmEF4Fnu94"&gt;Adding a texture with Siemens NX&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;使用 Siemens NX 工具添加自己喜歡的紋理或圖形。&lt;/p&gt;
-&lt;p&gt;CES: NX Animation Designer&lt;/p&gt;
-&lt;p&gt;NX動畫設計器可以設計出機械產品的運動路線。&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry></feed>
+&lt;p&gt;&lt;a href="https://youtu.be/k4-Bb9yINE4"&gt;CES: NX Animation Designer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NX動畫設計器可以設計出機械產品的運動路線。&lt;/p&gt;
+&lt;h2&gt;建立倉儲&lt;/h2&gt;
+&lt;p&gt;先進去老師倉儲的cmsimde site &lt;/p&gt;
+&lt;p&gt;接著複製網址&lt;/p&gt;
+&lt;p&gt;到Create a new repository點開import a repository&lt;/p&gt;
+&lt;p&gt;貼上剛剛複製的網址，名稱設為cd2022&lt;/p&gt;
+&lt;p&gt;接著到小黑窗&lt;/p&gt;
+&lt;p&gt;cd tmp&lt;/p&gt;
+&lt;p&gt;git clone --recurse-submodules https:/github.com/a40923101/cd2022.git&lt;/p&gt;
+&lt;p&gt;cd cd2022&lt;/p&gt;
+&lt;p&gt;cms&lt;/p&gt;
+&lt;p&gt;複製網址就可以開啟倉儲&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry></feed>
