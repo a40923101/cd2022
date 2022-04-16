@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-04-17T07:43:20+08:00</updated><entry><title>2022 Spring CD 課程</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-04-17T07:43:20+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-04-17T07:47:58+08:00</updated><entry><title>2022 Spring CD 課程</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-04-17T07:47:58+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 &lt;p&gt;W8 uarm機械組合&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 &lt;p&gt;W8 uarm機械組合&lt;/p&gt;
@@ -7,7 +7,7 @@
 
 &lt;h2&gt;W8 uarm&lt;/h2&gt;
 &lt;p&gt;組員分別以 Solvespace, NX (12, 1980 或 2008) 及 Onshape完成&lt;a href="https://youtu.be/HqSpqLlonV0"&gt;零件繪製&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;把&lt;a href="https://youtu.be/01XXtnYs8VE"&gt;零件組裝&lt;/a&gt;完成後&lt;a href="https://a40923101.github.io/cd2022/images/51.png"&gt;組裝圖1&lt;/a&gt;&lt;a href="https://a40923101.github.io/cd2022/images/52.png"&gt;組裝圖3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;把&lt;a href="https://youtu.be/01XXtnYs8VE"&gt;零件組裝&lt;/a&gt;完成後[組合圖1]  [組合圖2] [組合圖3] &lt;/p&gt;
 &lt;p&gt;將 uarm 組合件轉為 STL 格式後轉入 CoppeliaSim&lt;/p&gt;
 &lt;p&gt;並安排以 GUI Slider 方式控制前三軸作動. &lt;/p&gt;
 &lt;p&gt;在繪圖過程中我們兩個人一組&lt;/p&gt;
