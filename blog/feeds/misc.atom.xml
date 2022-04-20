@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-04-20T08:17:02+08:00</updated><entry><title>2022 Spring CD 課程</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-04-20T08:17:02+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-04-20T08:30:38+08:00</updated><entry><title>W8 uarm機械組合</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-04-20T08:29:50+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
 
 
 &lt;h2&gt;W8 uarm&lt;/h2&gt;
@@ -21,10 +19,8 @@
 &lt;p&gt;比較麻煩的是CoppeliaSim控制前三軸作動&lt;/p&gt;
 &lt;p&gt;需要仔細將連桿連接&lt;/p&gt;
 &lt;p&gt;這方面花費較多的時間&lt;/p&gt;
-&lt;p&gt;目前還在研究當中&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程</title><link href="./w7_summary.html.html" rel="alternate"></link><published>2022-04-07T11:00:00+08:00</published><updated>2022-04-17T07:39:54+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-07:./w7_summary.html.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;W7機械手臂 &lt;/p&gt;
-</summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;W7機械手臂 &lt;/p&gt;
+&lt;p&gt;目前還在研究當中&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W7機械手臂</title><link href="./w7_summary.html.html" rel="alternate"></link><published>2022-04-07T11:00:00+08:00</published><updated>2022-04-20T08:30:38+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-07:./w7_summary.html.html</id><summary type="html">&lt;p&gt;W7機械手臂 &lt;/p&gt;
+</summary><content type="html">&lt;p&gt;W7機械手臂 &lt;/p&gt;
 
 
 &lt;h2&gt;W7機械手臂&lt;/h2&gt;
@@ -34,11 +30,9 @@
 &lt;p&gt;將零件組裝好後&lt;/p&gt;
 &lt;p&gt;利用&lt;a href="https://a40923101.github.io/cd2022/images/44.png"&gt;Coppeliasim模擬&lt;/a&gt;機械運轉&lt;/p&gt;
 &lt;p&gt;目前零件畫好也也組裝完畢&lt;/p&gt;
-&lt;p&gt;研究程式碼讓機械手臂可以正常運轉&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程</title><link href="./w6_firday.html" rel="alternate"></link><published>2022-04-01T11:00:00+08:00</published><updated>2022-04-07T21:30:46+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-01:./w6_firday.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;建立倉儲方式&lt;/p&gt;
+&lt;p&gt;研究程式碼讓機械手臂可以正常運轉&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>建立和推送倉儲方式</title><link href="./w6_firday.html" rel="alternate"></link><published>2022-04-01T11:00:00+08:00</published><updated>2022-04-20T08:30:36+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-01:./w6_firday.html</id><summary type="html">&lt;p&gt;建立倉儲方式&lt;/p&gt;
 &lt;p&gt;Pull requests&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;建立倉儲方式&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;建立倉儲方式&lt;/p&gt;
 &lt;p&gt;Pull requests&lt;/p&gt;
 
 
@@ -66,7 +60,7 @@
 &lt;p&gt;按下Create pull request&lt;/p&gt;
 &lt;p&gt;再按一次Create pull request&lt;/p&gt;
 &lt;p&gt;組長會開協同，可以自己同意Confirm merge&lt;/p&gt;
-&lt;p&gt;最後檢查是否上傳成功&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>2022 Spring CD 課程</title><link href="./w6_40923101.html" rel="alternate"></link><published>2022-03-31T11:00:00+08:00</published><updated>2022-04-07T21:19:22+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-03-31:./w6_40923101.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
+&lt;p&gt;最後檢查是否上傳成功&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W3 NX1980作業</title><link href="./w6_40923101.html" rel="alternate"></link><published>2022-03-31T11:00:00+08:00</published><updated>2022-04-20T08:30:36+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-03-31:./w6_40923101.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 &lt;p&gt;設定 blog 並紀錄上課之過程筆記&lt;/p&gt;
 &lt;p&gt;W2小組分組&lt;/p&gt;
 &lt;p&gt;W3 NX1980作業&lt;/p&gt;
@@ -96,15 +90,4 @@
 &lt;p&gt;&lt;a href="https://youtu.be/zHmEF4Fnu94"&gt;Adding a texture with Siemens NX&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;使用 Siemens NX 工具添加自己喜歡的紋理或圖形。&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://youtu.be/k4-Bb9yINE4"&gt;CES: NX Animation Designer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;NX動畫設計器可以設計出機械產品的運動路線。&lt;/p&gt;
-&lt;h2&gt;建立倉儲&lt;/h2&gt;
-&lt;p&gt;先進去老師倉儲的cmsimde site &lt;/p&gt;
-&lt;p&gt;接著複製網址&lt;/p&gt;
-&lt;p&gt;到Create a new repository點開import a repository&lt;/p&gt;
-&lt;p&gt;貼上剛剛複製的網址，名稱設為cd2022&lt;/p&gt;
-&lt;p&gt;接著到小黑窗&lt;/p&gt;
-&lt;p&gt;cd tmp&lt;/p&gt;
-&lt;p&gt;git clone --recurse-submodules https:/github.com/a40923101/cd2022.git&lt;/p&gt;
-&lt;p&gt;cd cd2022&lt;/p&gt;
-&lt;p&gt;cms&lt;/p&gt;
-&lt;p&gt;複製網址就可以開啟倉儲&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry></feed>
+&lt;p&gt;NX動畫設計器可以設計出機械產品的運動路線。&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry></feed>
