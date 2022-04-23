@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-04-24T01:13:02+08:00</updated><entry><title>W8 uarm機械組合</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-04-24T01:13:02+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-04-24T01:37:00+08:00</updated><entry><title>W8 uarm機械組合</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-04-24T01:13:02+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
 
 
@@ -30,7 +30,37 @@
 &lt;p&gt;將零件組裝好後&lt;/p&gt;
 &lt;p&gt;利用&lt;a href="https://a40923101.github.io/cd2022/images/44.png"&gt;Coppeliasim模擬&lt;/a&gt;機械運轉&lt;/p&gt;
 &lt;p&gt;目前零件畫好也也組裝完畢&lt;/p&gt;
-&lt;p&gt;研究程式碼讓機械手臂可以正常運轉&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>建立和推送倉儲方式</title><link href="./w6_firday.html" rel="alternate"></link><published>2022-04-01T11:00:00+08:00</published><updated>2022-04-20T08:30:36+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-01:./w6_firday.html</id><summary type="html">&lt;p&gt;建立倉儲方式&lt;/p&gt;
+&lt;p&gt;研究程式碼讓機械手臂可以正常運轉&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W6blog</title><link href="./w6_note.html" rel="alternate"></link><published>2022-04-04T11:00:00+08:00</published><updated>2022-04-24T01:37:00+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-04:./w6_note.html</id><summary type="html">&lt;p&gt;設定 Leo&lt;/p&gt;
+&lt;p&gt;使用blog紀錄上課筆記&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;設定 Leo&lt;/p&gt;
+&lt;p&gt;使用blog紀錄上課筆記&lt;/p&gt;
+
+
+&lt;h2&gt;Leo&lt;/h2&gt;
+&lt;p&gt;在小黑窗開啟&lt;/p&gt;
+&lt;p&gt;leo&lt;/p&gt;
+&lt;p&gt;接著開啟cd2022的config裡面的pelican&lt;/p&gt;
+&lt;p&gt;修改裡面原有的資料，改成自己的學號和標題&lt;/p&gt;
+&lt;p&gt;這裡網址改成自己倉儲&lt;/p&gt;
+&lt;p&gt;下面網址也都改成自己倉儲&lt;/p&gt;
+&lt;p&gt;修改自己想要的標題資訊&lt;/p&gt;
+&lt;p&gt;修改好後對local-blog按下右鍵，在按下Goto Script&lt;/p&gt;
+&lt;p&gt;將那段網址複製下來&lt;/p&gt;
+&lt;p&gt;在小黑窗打上&lt;/p&gt;
+&lt;p&gt;cd tmp&lt;/p&gt;
+&lt;p&gt;cd cd2022 &lt;/p&gt;
+&lt;p&gt;pelican markdown -o blog -s local_publishconf.py&lt;/p&gt;
+&lt;p&gt;第一次打會出現一個錯誤，需要再cd2022的markdown裡面加個images的資料夾就可以解決錯誤&lt;/p&gt;
+&lt;p&gt;都好了後可以推看看倉儲，檢查有沒有完成&lt;/p&gt;
+&lt;h2&gt;blog&lt;/h2&gt;
+&lt;p&gt;使用blog來記錄自己每週製作的作業&lt;/p&gt;
+&lt;p&gt;編輯好後對local-blog按下右鍵，在按下Goto Script&lt;/p&gt;
+&lt;p&gt;將那段網址複製下來&lt;/p&gt;
+&lt;p&gt;在小黑窗打上&lt;/p&gt;
+&lt;p&gt;cd tmp&lt;/p&gt;
+&lt;p&gt;cd cd2022 &lt;/p&gt;
+&lt;p&gt;pelican markdown -o blog -s local_publishconf.py&lt;/p&gt;
+&lt;p&gt;都好了後可以推看看倉儲，檢查有沒有完成&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>建立和推送倉儲方式</title><link href="./w6_firday.html" rel="alternate"></link><published>2022-04-01T11:00:00+08:00</published><updated>2022-04-20T08:30:36+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-01:./w6_firday.html</id><summary type="html">&lt;p&gt;建立倉儲方式&lt;/p&gt;
 &lt;p&gt;Pull requests&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;建立倉儲方式&lt;/p&gt;
 &lt;p&gt;Pull requests&lt;/p&gt;
@@ -60,12 +90,10 @@
 &lt;p&gt;按下Create pull request&lt;/p&gt;
 &lt;p&gt;再按一次Create pull request&lt;/p&gt;
 &lt;p&gt;組長會開協同，可以自己同意Confirm merge&lt;/p&gt;
-&lt;p&gt;最後檢查是否上傳成功&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W3 NX1980作業</title><link href="./w6_40923101.html" rel="alternate"></link><published>2022-03-31T11:00:00+08:00</published><updated>2022-04-20T08:30:36+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-03-31:./w6_40923101.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;設定 blog 並紀錄上課之過程筆記&lt;/p&gt;
+&lt;p&gt;最後檢查是否上傳成功&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W3 NX1980作業</title><link href="./w6_40923101.html" rel="alternate"></link><published>2022-03-31T11:00:00+08:00</published><updated>2022-04-24T01:37:00+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-03-31:./w6_40923101.html</id><summary type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
 &lt;p&gt;W2小組分組&lt;/p&gt;
 &lt;p&gt;W3 NX1980作業&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2022 Spring 協同產品設計實習&lt;/p&gt;
-&lt;p&gt;設定 blog 並紀錄上課之過程筆記&lt;/p&gt;
 &lt;p&gt;W2小組分組&lt;/p&gt;
 &lt;p&gt;W3 NX1980作業&lt;/p&gt;
 

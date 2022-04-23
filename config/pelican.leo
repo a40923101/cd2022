@@ -58,6 +58,7 @@
 <v t="leo.20180423103639.1"><vh>2022 spring CP 課程</vh>
 <v t="leo.20180423103656.1"><vh>@edit 20220330.md</vh></v>
 <v t="leo.20220407212131.1"><vh>@edit 20220401.md</vh></v>
+<v t="leo.20220424012916.1"><vh>@edit w6.md</vh></v>
 <v t="leo.20220407210205.1"><vh>@edit w7.md</vh></v>
 <v t="leo.20220413202342.1"><vh>@edit w8.md</vh></v>
 </v>
