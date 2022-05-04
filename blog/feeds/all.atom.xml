@@ -56,7 +56,7 @@ frameStops: {
 &lt;h2&gt;W10 ssh&lt;/h2&gt;
 &lt;p&gt;設置SSh鑰匙&lt;/p&gt;
 &lt;p&gt;之前我就有設置過SSh&lt;/p&gt;
-&lt;p&gt;所以這部分很快就完成&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W8 uarm機械組合</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-04-24T01:13:02+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
+&lt;p&gt;所以這部分很快就完成&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W8 uarm機械組合</title><link href="./midterm.html.html" rel="alternate"></link><published>2022-04-13T11:00:00+08:00</published><updated>2022-05-04T10:36:24+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-13:./midterm.html.html</id><summary type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;W8 uarm機械組合&lt;/p&gt;
 
 
@@ -76,7 +76,81 @@ frameStops: {
 &lt;p&gt;比較麻煩的是CoppeliaSim控制前三軸作動&lt;/p&gt;
 &lt;p&gt;需要仔細將連桿連接&lt;/p&gt;
 &lt;p&gt;這方面花費較多的時間&lt;/p&gt;
-&lt;p&gt;最後還是有把三軸作動完成&lt;/p&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W7 機械手臂</title><link href="./w7_summary.html.html" rel="alternate"></link><published>2022-04-07T11:00:00+08:00</published><updated>2022-04-24T01:53:00+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-07:./w7_summary.html.html</id><summary type="html">&lt;p&gt;W7 機械手臂 &lt;/p&gt;
+&lt;p&gt;最後還是有把三軸作動完成&lt;/p&gt;
+&lt;p&gt;&lt;link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css"&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+var winkVideoData = {
+dataVersion: 1,
+frameRate: 20,
+buttonFrameLength: 10,
+buttonFrameOffset: 5,
+frameStops: {
+},
+};
+&lt;/script&gt;
+&lt;div class="winkVideoContainerClass"&gt;&lt;video width="960" height="540" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" video=""&gt;
+&lt;source src="https://a40923101.github.io/cd2022/downloads/wink24.mp4" type="video/mp4" /&gt;&lt;/video&gt;
+&lt;div class="winkVideoOverlayClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarClass"&gt;&lt;button class="winkVideoControlBarPlayButtonClass"&gt;&lt;/button&gt; &lt;button class="winkVideoControlBarPauseButtonClass"&gt;&lt;/button&gt;
+&lt;div class="winkVideoControlBarProgressLeftClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressEmptyMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressRightClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressFilledMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressThumbClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="winkVideoPlayOverlayClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css"&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+var winkVideoData = {
+dataVersion: 1,
+frameRate: 20,
+buttonFrameLength: 10,
+buttonFrameOffset: 5,
+frameStops: {
+},
+};
+&lt;/script&gt;
+&lt;div class="winkVideoContainerClass"&gt;&lt;video width="960" height="540" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" video=""&gt;
+&lt;source src="https://a40923101.github.io/cd2022/downloads/wink25.mp4" type="video/mp4" /&gt;&lt;/video&gt;
+&lt;div class="winkVideoOverlayClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarClass"&gt;&lt;button class="winkVideoControlBarPlayButtonClass"&gt;&lt;/button&gt; &lt;button class="winkVideoControlBarPauseButtonClass"&gt;&lt;/button&gt;
+&lt;div class="winkVideoControlBarProgressLeftClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressEmptyMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressRightClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressFilledMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressThumbClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="winkVideoPlayOverlayClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css"&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+var winkVideoData = {
+dataVersion: 1,
+frameRate: 20,
+buttonFrameLength: 10,
+buttonFrameOffset: 5,
+frameStops: {
+},
+};
+&lt;/script&gt;
+&lt;div class="winkVideoContainerClass"&gt;&lt;video width="960" height="540" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" video=""&gt;
+&lt;source src="https://a40923101.github.io/cd2022/downloads/wink27.mp4" type="video/mp4" /&gt;&lt;/video&gt;
+&lt;div class="winkVideoOverlayClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarClass"&gt;&lt;button class="winkVideoControlBarPlayButtonClass"&gt;&lt;/button&gt; &lt;button class="winkVideoControlBarPauseButtonClass"&gt;&lt;/button&gt;
+&lt;div class="winkVideoControlBarProgressLeftClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressEmptyMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressRightClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressFilledMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressThumbClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="winkVideoPlayOverlayClass"&gt;&lt;/div&gt;
+&lt;/div&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W7 機械手臂</title><link href="./w7_summary.html.html" rel="alternate"></link><published>2022-04-07T11:00:00+08:00</published><updated>2022-04-24T01:53:00+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-04-07:./w7_summary.html.html</id><summary type="html">&lt;p&gt;W7 機械手臂 &lt;/p&gt;
 </summary><content type="html">&lt;p&gt;W7 機械手臂 &lt;/p&gt;
 
 
