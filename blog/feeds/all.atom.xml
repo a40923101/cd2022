@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-05-04T01:07:24+08:00</updated><entry><title>W10作業</title><link href="./w10.html.html" rel="alternate"></link><published>2022-05-01T11:00:00+08:00</published><updated>2022-05-04T01:07:24+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-01:./w10.html.html</id><summary type="html">&lt;p&gt;W10 block_ui&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-05-04T11:00:00+08:00</updated><entry><title>W11作業</title><link href="./w11.html.html" rel="alternate"></link><published>2022-05-04T11:00:00+08:00</published><updated>2022-05-04T09:27:02+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-04:./w11.html.html</id><summary type="html">&lt;p&gt;W11-1任務&lt;/p&gt;
+&lt;p&gt;w11-2任務&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;W11-1任務&lt;/p&gt;
+&lt;p&gt;w11-2任務&lt;/p&gt;
+
+
+&lt;h2&gt;W11-1任務&lt;/h2&gt;
+&lt;p&gt;將w8~w10的協同作業過程所負責的項目內容與心得&lt;/p&gt;
+&lt;p&gt;要記得上傳時要先將&lt;a href="https://a40923101.github.io/cd2022/images/21.png"&gt;圖片和wink改網址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;將code複製至小白窗存成文字檔&lt;/p&gt;
+&lt;p&gt;接著&lt;a href="https://a40923101.github.io/cd2022/images/19.png"&gt;推到小組網頁&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在之前就已經有在小組網頁推過資料&lt;/p&gt;
+&lt;p&gt;所以可以很熟悉推送資料的過程&lt;/p&gt;
+&lt;h2&gt;w11-2任務&lt;/h2&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W10作業</title><link href="./w10.html.html" rel="alternate"></link><published>2022-05-01T11:00:00+08:00</published><updated>2022-05-04T01:07:24+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-01:./w10.html.html</id><summary type="html">&lt;p&gt;W10 block_ui&lt;/p&gt;
 &lt;p&gt;W10 nx_integ&lt;/p&gt;
 &lt;p&gt;W10 ssh&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;W10 block_ui&lt;/p&gt;
