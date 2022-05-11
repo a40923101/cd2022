@@ -1,5 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-05-04T20:25:38+08:00</updated><entry><title>W11作業</title><link href="./w11.html.html" rel="alternate"></link><published>2022-05-04T11:00:00+08:00</published><updated>2022-05-04T20:25:38+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-04:./w11.html.html</id><summary type="html">&lt;p&gt;W11-1任務&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2022-05-11T11:36:36+08:00</updated><entry><title>W12作業</title><link href="./w12.html.html" rel="alternate"></link><published>2022-05-11T11:00:00+08:00</published><updated>2022-05-11T11:36:36+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-11:./w12.html.html</id><summary type="html">&lt;p&gt;W12任務&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;W12任務&lt;/p&gt;
+
+
+&lt;h2&gt;W12任務&lt;/h2&gt;
+&lt;p&gt;uarm 機械手臂所需的零件總共有155個&lt;/p&gt;
+&lt;p&gt;若不加入重複使用的零件總數有58個&lt;/p&gt;
+&lt;p&gt;M2X4 螺絲&lt;/p&gt;
+&lt;p&gt;M3X4 内六角圓頭螺絲&lt;/p&gt;
+&lt;p&gt;M3X5 内六角圓頭螺絲&lt;/p&gt;
+&lt;p&gt;M3X5 平頭螺絲&lt;/p&gt;
+&lt;p&gt;M3X5 沉頭螺絲&lt;/p&gt;
+&lt;p&gt;M3X5 扁平頭鐵鍍鎳螺絲&lt;/p&gt;
+&lt;p&gt;M3X5 圓頭黑色十字螺絲&lt;/p&gt;
+&lt;p&gt;M3X6 内六角圓頭螺絲&lt;/p&gt;
+&lt;p&gt;M3X15 雙通螺絲&lt;/p&gt;
+&lt;p&gt;M4X5 顶螺絲&lt;/p&gt;
+&lt;p&gt;M4X6 沉頭螺絲&lt;/p&gt;
+&lt;p&gt;M4X7 平頭螺絲&lt;/p&gt;
+&lt;p&gt;M4X10 平頭螺絲&lt;/p&gt;
+&lt;p&gt;M4X15 平頭螺絲&lt;/p&gt;
+&lt;p&gt;MF84&lt;/p&gt;
+&lt;p&gt;2mm導光柱&lt;/p&gt;
+&lt;p&gt;2mm導熱硅胶片&lt;/p&gt;
+&lt;p&gt;3Dprint轉接板&lt;/p&gt;
+&lt;p&gt;5-13-4軸承&lt;/p&gt;
+&lt;p&gt;6X2.5 磁鐵&lt;/p&gt;
+&lt;p&gt;8.3X1.5 防滑墊&lt;/p&gt;
+&lt;p&gt;前端通用件&lt;/p&gt;
+&lt;p&gt;前端關節&lt;/p&gt;
+&lt;p&gt;7mm 支撐柱&lt;/p&gt;
+&lt;p&gt;3mm 鋁支撐柱&lt;/p&gt;
+&lt;p&gt;三角形連桿軸承壓緊件&lt;/p&gt;
+&lt;p&gt;三角形連桿&lt;/p&gt;
+&lt;p&gt;絞鍊&lt;/p&gt;
+&lt;p&gt;主臂關節2&lt;/p&gt;
+&lt;p&gt;主臂關節1&lt;/p&gt;
+&lt;p&gt;電機軸承支撐座_左側&lt;/p&gt;
+&lt;p&gt;電機軸承支撐座_右側&lt;/p&gt;
+&lt;p&gt;右側曲柄&lt;/p&gt;
+&lt;p&gt;輸出軸&lt;/p&gt;
+&lt;p&gt;右側連桿&lt;/p&gt;
+&lt;p&gt;左側連桿&lt;/p&gt;
+&lt;p&gt;4mm 鋁支撐柱&lt;/p&gt;
+&lt;p&gt;減速箱上殼&lt;/p&gt;
+&lt;p&gt;減速箱下殼&lt;/p&gt;
+&lt;p&gt;L型連接件&lt;/p&gt;
+&lt;p&gt;軸承支撐軸&lt;/p&gt;
+&lt;p&gt;軸承支撐圈&lt;/p&gt;
+&lt;p&gt;底座上蓋&lt;/p&gt;
+&lt;p&gt;底座中間部分&lt;/p&gt;
+&lt;p&gt;底座蓋&lt;/p&gt;
+&lt;p&gt;磁编碼器PCB&lt;/p&gt;
+&lt;p&gt;42進步電機&lt;/p&gt;
+&lt;p&gt;塑料蓋板&lt;/p&gt;
+&lt;p&gt;利用老師今天所教的可以使用py檔案來run&lt;/p&gt;
+&lt;p&gt;就可以得知uarm機械手臂&lt;/p&gt;
+&lt;p&gt;30%零件採steel製，其餘採Aluminum製，總重量約2,2205kg
+全部零件採Aluminum製，總重量約1,412kg
+全部零件採steel製，總重量約4,1062kg&lt;/p&gt;
+&lt;p&gt;&lt;link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css"&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+var winkVideoData = {
+dataVersion: 1,
+frameRate: 20,
+buttonFrameLength: 10,
+buttonFrameOffset: 5,
+frameStops: {
+},
+};
+&lt;/script&gt;
+&lt;div class="winkVideoContainerClass"&gt;&lt;video width="960" height="540" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" video=""&gt;
+&lt;source src="https://a40923101.github.io/cd2022/downloads/wink33.mp4" type="video/mp4" /&gt;&lt;/video&gt;
+&lt;div class="winkVideoOverlayClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarClass"&gt;&lt;button class="winkVideoControlBarPlayButtonClass"&gt;&lt;/button&gt; &lt;button class="winkVideoControlBarPauseButtonClass"&gt;&lt;/button&gt;
+&lt;div class="winkVideoControlBarProgressLeftClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressEmptyMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressRightClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressFilledMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressThumbClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="winkVideoPlayOverlayClass"&gt;&lt;/div&gt;
+&lt;/div&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W11作業</title><link href="./w11.html.html" rel="alternate"></link><published>2022-05-04T11:00:00+08:00</published><updated>2022-05-04T20:25:38+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-04:./w11.html.html</id><summary type="html">&lt;p&gt;W11-1任務&lt;/p&gt;
 &lt;p&gt;W11-2任務&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;W11-1任務&lt;/p&gt;
 &lt;p&gt;W11-2任務&lt;/p&gt;
