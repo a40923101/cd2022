@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-05-24T23:19:16+08:00</updated><entry><title>W13</title><link href="./w13.html.html" rel="alternate"></link><published>2022-05-18T11:00:00+08:00</published><updated>2022-05-24T23:19:16+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-18:./w13.html.html</id><summary type="html">&lt;p&gt;W13&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-06-01T10:54:02+08:00</updated><entry><title>W14</title><link href="./w14.html.html" rel="alternate"></link><published>2022-05-25T11:00:00+08:00</published><updated>2022-06-01T10:54:02+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-25:./w14.html.html</id><summary type="html">&lt;p&gt;W14&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;W14&lt;/p&gt;
+
+
+&lt;h2&gt;W14&lt;/h2&gt;
+&lt;p&gt;利用Coppeliasim模擬&lt;a href="https://a40923101.github.io/cd2022/images/54.png"&gt;MTB&lt;/a&gt;運轉&lt;/p&gt;
+&lt;p&gt;將方塊吸起來&lt;/p&gt;
+&lt;p&gt;轉半圈在放下來&lt;/p&gt;
+&lt;p&gt;利用老師給的程式碼去修改一些部份&lt;/p&gt;
+&lt;p&gt;使機械能購運轉&lt;/p&gt;
+&lt;p&gt;在運轉前要記得零件動態關閉&lt;/p&gt;
+&lt;p&gt;&lt;link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css"&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+var winkVideoData = {
+dataVersion: 1,
+frameRate: 20,
+buttonFrameLength: 10,
+buttonFrameOffset: 5,
+frameStops: {
+},
+};
+&lt;/script&gt;
+&lt;div class="winkVideoContainerClass"&gt;&lt;video width="960" height="540" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData"&gt;
+&lt;source src="https://a40923101.github.io/cd2022/downloads/wink34.mp4" type="video/mp4" /&gt;&lt;/video&gt;
+&lt;div class="winkVideoOverlayClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarClass"&gt;&lt;button class="winkVideoControlBarPlayButtonClass"&gt;&lt;/button&gt; &lt;button class="winkVideoControlBarPauseButtonClass"&gt;&lt;/button&gt;
+&lt;div class="winkVideoControlBarProgressLeftClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressEmptyMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressRightClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressFilledMiddleClass"&gt;&lt;/div&gt;
+&lt;div class="winkVideoControlBarProgressThumbClass"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="winkVideoPlayOverlayClass"&gt;&lt;/div&gt;
+&lt;/div&gt;</content><category term="Misc"></category><category term="2022SpringCD"></category></entry><entry><title>W13</title><link href="./w13.html.html" rel="alternate"></link><published>2022-05-18T11:00:00+08:00</published><updated>2022-05-24T23:19:16+08:00</updated><author><name>40923101</name></author><id>tag:None,2022-05-18:./w13.html.html</id><summary type="html">&lt;p&gt;W13&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;W13&lt;/p&gt;
 
 
