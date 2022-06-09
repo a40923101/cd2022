@@ -181,7 +181,8 @@ frameStops: {
 <div class="winkVideoControlBarProgressThumbClass"></div>
 </div>
 <div class="winkVideoPlayOverlayClass"></div>
-</div><h2>W8</h2>
+</div>
+<h2>W8</h2>
 <p>這週的作業跟期中考一起製作uarm機械</p>
 <p>組員分別以Solvespace和NX及Onshape完成零件繪製後</p>
 <p>這是我們繪製的uarm各零件圖</p>
@@ -467,7 +468,8 @@ frameStops: {
 <div class="winkVideoControlBarProgressThumbClass"></div>
 </div>
 <div class="winkVideoPlayOverlayClass"></div>
-</div><h2>W12</h2>
+</div>
+<h2>W12</h2>
 <p><span>uarm 機械手臂所需的零件總共有155個</span></p>
 <p>若不加入重複使用的零件總數有58個</p>
 <p><a href="https://drive.google.com/drive/folders/1KMaE3LswPPx1LT_33497LAf8NL_FBQ2o?usp=sharing">uarm零件檔</a></p>
@@ -551,7 +553,8 @@ frameStops: {
 </div>
 <div class="winkVideoPlayOverlayClass"></div>
 <div class="winkVideoPlayOverlayClass"></div>
-</div><h2>W13</h2>
+</div>
+<h2>W13</h2>
 <p>這個禮拜下載CoppeliaSimEdu</p>
 <p>他是CoppeliaSim的3.0版</p>
 <p><img caption="false" height="281" src="https://a40923101.github.io/cd2022/images/53.png" width="500"/></p>
@@ -568,7 +571,8 @@ frameStops: {
 <p><span>像是12 1872 1980 2008的版本</span></p>
 <p>uarm組合檔</p>
 <p><img caption="false" height="281" src="https://a40923101.github.io/cd2022/images/55.png" width="500"/></p>
-<p></p><h2>W14</h2>
+<p></p>
+<h2>W14</h2>
 <p>利用<span>Coppeliasim</span>模擬TMB運轉</p>
 <p>將方塊吸起來</p>
 <p>轉半圈在放下來</p>
@@ -615,8 +619,7 @@ frameStops: {
 };
 </script>
 <div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="540" video="" width="960">
-<source src="/downloads/wink35.mp4" type="video/mp4"/>
-</video>
+<source src="/downloads/wink35.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
 <div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
 <div class="winkVideoControlBarProgressLeftClass"></div>
@@ -626,9 +629,421 @@ frameStops: {
 <div class="winkVideoControlBarProgressThumbClass"></div>
 </div>
 <div class="winkVideoPlayOverlayClass"></div>
-</div><h2>W15</h2>
+<div class="winkVideoPlayOverlayClass"></div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
 <p></p>
-<h2>W16</h2>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() 
+    axis1=sim.getObject('/joint1')
+    axis2=sim.getObject('/joint2')
+    axis3=sim.getObject('/joint3')
+    suctionPad=sim.getObject('/suctionPad')
+    MTB_Robot=sim.getObject("/base")
+    BaseFrame=sim.getObject("/BaseFrame")
+    block =sim.getObject("/block")
+    rotation1 = 0
+    distance3 = 0
+    deg = math.pi/180.
+end
+
+
+function sysCall_actuation() 
+--[[
+    rotation1 = rotation1 + 0.5*deg
+    print(rotation1)
+    sim.setJointPosition(axis1, -rotation1)
+    sim.setJointPosition(axis2, -rotation1)
+]]
+
+    message, auxiliaryData=sim.getSimulatorMessage()
+        while message ~= -1 do
+            key=auxiliaryData[1]
+            sim.addStatusbarMessage('user press key:'..key)
+            if (message==sim.message_keypress) then
+               --if (auxiliaryData[1]==112) then --p activate the suction pad
+                if (auxiliaryData[1]==string.byte('p')) then
+                    -- if key p pressed activate the suction mode
+sim.setScriptSimulationParameter(sim.getScriptAssociatedWithObject(suctionPad),'active','true')
+                end -- if p
+                if (auxiliaryData[1]==113) then --q deactivate the suction pad
+                    -- if key q pressed deactivate the suction mode
+sim.setScriptSimulationParameter(sim.getScriptAssociatedWithObject(suctionPad),'active','false')
+                end -- if q
+                if (auxiliaryData[1]==114) then --r right turn in degree
+                    -- if key r pressed axis1 angle adds 5 degrees
+                     rotation1 = rotation1 + 5*deg
+                     sim.setJointPosition(axis1, rotation1)
+                end -- if r
+                if (auxiliaryData[1]==108) then --l left turn in degree
+                    -- if key l pressed axis1 angle substract 5 degrees
+                     rotation1 = rotation1 - 5*deg
+                     sim.setJointPosition(axis1, rotation1)
+                end -- if l
+                if (auxiliaryData[1]==100) then --d suction pad down
+                    -- if key d pressed axis3 will down 0.01 m
+                     distance3 = distance3 + 0.01
+                     sim.setJointPosition(axis3, distance3)
+                end -- if d
+                if (auxiliaryData[1]==117) then --u suction pad up
+                    -- if key u pressed axis3 will up 0.01 m
+                     distance3 = distance3 - 0.01
+                     sim.setJointPosition(axis3, distance3)
+                end -- if u
+                if (auxiliaryData[1]==99) then --c coordinate of block
+                    blockPosition = sim.getObjectPosition(block, BaseFrame)
+                    sim.addStatusbarMessage("coordinate:"..table_to_string(blockPosition))
+                end --if c
+           end  -- if
+    message, auxiliaryData=sim.getSimulatorMessage()
+        end -- while
+end -- function
+function sysCall_sensing() 
+--[[
+    -- Read Proximity sensor (0= nothing detected, 1 = object detected)
+    local res = sim.readProximitySensor(proximity)
+
+    -- Check if possible to insert an new box
+    if (sim.getSimulationTime()-T_last_inserted &gt; T_insert) and not hasStopped then
+        insertBox()
+    end
+
+    -- If proximity sensor detects an object, stop the belt, stop inserting objects
+    if res == 1 and not hasStopped then
+        if boolList[1] then
+            sim.setScriptSimulationParameter(sim.handle_self,"conveyorBeltVelocity",0)
+            deltaTime = sim.getSimulationTime()-T_last_inserted
+            hasStopped = true
+        else
+            local box = table.remove(boxList,1)
+            local boxDummy = table.remove(boxDummyList,1)
+            table.remove(boolList,1)
+
+            sim.removeObject(box)
+            sim.removeObject(boxDummy)
+        end
+    end
+
+    -- If proximity sensor detects nothing and belt has stopped, start belt, continue inserting
+    if res == 0 and hasStopped then
+        sim.setScriptSimulationParameter(sim.handle_self,"conveyorBeltVelocity",beltSpeed)
+        hasStopped = false
+        T_last_inserted = sim.getSimulationTime()-deltaTime
+    end
+    
+]]--
+end
+function sysCall_cleanup() 
+end 
+-- Convert a lua table into a lua syntactically correct string
+function table_to_string(tbl)
+    local result = "{"
+    for k, v in pairs(tbl) do
+        -- Check the key type (ignore any numerical keys - assume its an array)
+        if type(k) == "string" then
+            result = result.."[\""..k.."\"]".."="
+        end
+
+        -- Check the value type
+        if type(v) == "table" then
+            result = result..table_to_string(v)
+        elseif type(v) == "boolean" then
+            result = result..tostring(v)
+        else
+            v = round(v, 4)
+            result = result.."\""..v.."\""
+        end
+        result = result..","
+    end
+    -- Remove leading commas from the result
+    if result ~= "" then
+        result = result:sub(1, result:len()-1)
+    end
+    return result.."}"
+end
+function round(x, n)
+    n = math.pow(10, n or 0)
+    x = x * n
+    if x &gt;= 0 then x = math.floor(x + 0.5) else x = math.ceil(x - 0.5) end
+    return x / n
+end
+
+
+function insertBox()
+    -- Generate random numbers
+    local rand1 = math.random()
+    local rand2 = math.random()
+    local rand3 = math.random()
+    -- Generate random disturbances on position and orientation
+    local dx = (2*rand1-1)*0.1
+    local dy = (2*rand2-1)*0.1
+    local dphi = (2*rand3-1)*0.5
+    local disturbedCoordinates = {0,0,0}
+    disturbedCoordinates[1] = insertCoordinate[1]+dx
+    disturbedCoordinates[2] = insertCoordinate[2]+dy
+    disturbedCoordinates[3] = insertCoordinate[3]
+    -- Copy and paste box and boxDummy
+    local insertedObjects = sim.copyPasteObjects({box,boxDummy},0)
+    -- Update last inserted box time
+    T_last_inserted = sim.getSimulationTime()
+    -- Move and rotate
+    sim.setObjectPosition(insertedObjects[1],-1,disturbedCoordinates)
+    sim.setObjectOrientation(insertedObjects[1],-1,{0,0,dphi})
+    -- Store handles to boxes and dummies
+    table.insert(boxList,insertedObjects[1])
+    table.insert(boxDummyList,insertedObjects[2]) 
+    -- Decide if object is good or bad
+    local decision = math.random() 
+    if decision &lt;= goodPercentage then
+    -- Object is good, assign goodColor
+        sim.setShapeColor(insertedObjects[1],nil,sim.colorcomponent_ambient_diffuse,goodColor)
+        table.insert(boolList,true)
+    else
+    -- Object is bad, assign random color
+        sim.setShapeColor(insertedObjects[1],nil,sim.colorcomponent_ambient_diffuse,{rand1,rand2,rand3})
+        table.insert(boolList,false)
+    end
+end
+
+
+</pre>
+<p></p><h2>W15</h2>
+<p>使用老師的程式，利用鍵盤來操作旋轉模擬</p>
+<p>就可以順時針及逆時針旋轉</p>
+<p>利用<span>UARM</span>來Tic-Tae-Toe遊戲模擬</p>
+<p><span>joint1，</span>L為順時針，K<span>為逆時針</span></p>
+<p><span>joint2，</span>J<span>為順時針，</span>H<span>為逆時針</span></p>
+<p><span>joint3，</span>G<span>為順時針，</span>F<span>為逆時針</span></p>
+<p><img alt="" height="281" src="/images/67.png" width="500"/></p>
+<p><img alt="" height="281" src="/images/68.png" width="500"/></p>
+<p><img alt="" height="281" src="/images/69.png" width="500"/></p>
+<p></p>
+<p></p>
+<p></p>
+<script>
+var winkVideoData = {
+dataVersion: 1,
+frameRate: 20,
+buttonFrameLength: 10,
+buttonFrameOffset: 5,
+frameStops: {
+},
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="540" video="" width="960">
+<source src="/downloads/wink38.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init()
+    axis1=sim.getObject('./joint1')
+    axis2=sim.getObject('./joint2')
+    axis3=sim.getObject('./joint3')
+    suctionPad=sim.getObject('/suctionPad')
+    rotation1 = 0
+    rotation2 = 0
+    rotation3 = 0
+    deg = math.pi/180.
+    enableSuctionPad(true)
+end
+function enableSuctionPad(enable)
+    -- use the suctionPad object to pass the variable activity value
+    -- if enable = true, the activity = 'on'
+    if enable then
+        sim.writeCustomDataBlock(suctionPad,'activity','on')
+    else
+        sim.writeCustomDataBlock(suctionPad,'activity','off')
+    end
+end
+function sysCall_actuation() 
+--[[
+    rotation1 = rotation1 + 1*deg
+    print(rotation1)
+    sim.setJointPosition(axis1, -rotation1)
+    sim.setJointPosition(axis2, -rotation1)
+]]
+    message, auxiliaryData=sim.getSimulatorMessage()
+    while message ~= -1 do
+        key=auxiliaryData[1]
+        sim.addStatusbarMessage('user press key:'..key)
+        if (message==sim.message_keypress) then
+           --if (auxiliaryData[1]==112) then --p activate the suction pad
+            if (auxiliaryData[1]==string.byte('p')) then
+                -- if key p pressed activate the suction mode
+--sim.setScriptSimulationParameter(sim.getScriptAssociatedWithObject(suctionPad),'active','true')
+                enableSuctionPad(true)
+            end -- if p
+            if (auxiliaryData[1]==string.byte('q')) then --q deactivate the suction pad
+                -- if key q pressed deactivate the suction mode
+--sim.setScriptSimulationParameter(sim.getScriptAssociatedWithObject(suctionPad),'active','false')
+                enableSuctionPad(false)
+            end -- if q
+            if (auxiliaryData[1]==string.byte('k')) then --k right turn in degree
+                -- if key k pressed axis1 angle adds 2 degrees
+                 rotation1 = rotation1 + 2*deg
+                 --sim.setJointPosition(axis1, rotation1)
+                 sim.setJointTargetPosition(axis1, rotation1)
+            end -- if k
+            if (auxiliaryData[1]==string.byte('l')) then --l left turn in degree
+                -- if key l pressed axis1 angle substract 2 degrees
+                 rotation1 = rotation1 - 2*deg
+                 --sim.setJointPosition(axis1, rotation1)
+                 sim.setJointTargetPosition(axis1, rotation1)
+            end -- if l
+-- for joint2 start ##########################################################
+            if (auxiliaryData[1]== string.byte("h")) then --r right turn in degree
+                -- if key r pressed axis1 angle adds 2 degrees
+                 rotation2 = rotation2 + 1*deg
+                 --sim.setJointPosition(axis2, rotation2)
+                 sim.setJointTargetPosition(axis2, rotation2)
+            end -- if k
+            if (auxiliaryData[1]==string.byte("j")) then
+                -- if key j pressed axis2 angle substract 2 degrees
+                 rotation2 = rotation2 - 1*deg
+                 --sim.setJointPosition(axis2, rotation2)
+                 sim.setJointTargetPosition(axis2, rotation2)
+            end -- if j
+-- for joint2 end ##########################################################
+-- for joint3 start ##########################################################
+            if (auxiliaryData[1]== string.byte("f")) then
+                -- if key f pressed axis3 angle adds 2 degrees
+                 rotation3 = rotation3 + 1*deg
+                 --sim.setJointPosition(axis3, rotation3)
+                 sim.setJointTargetPosition(axis3, rotation3)
+            end -- if f
+            if (auxiliaryData[1]==string.byte("g")) then
+                -- if key g pressed axis3 angle substract 2 degrees
+                 rotation3 = rotation3 - 1*deg
+                 --sim.setJointPosition(axis3, rotation3)
+                 sim.setJointTargetPosition(axis3, rotation3)
+            end -- if g
+-- for joint3 end ##########################################################
+            if (auxiliaryData[1]==99) then --c coordinate of block
+                blockPosition = sim.getObjectPosition(block, BaseFrame)
+                sim.addStatusbarMessage("coordinate:"..table_to_string(blockPosition))
+            end --if c
+       end  -- if
+    message, auxiliaryData=sim.getSimulatorMessage()
+    end -- while
+end -- function
+
+function sysCall_sensing() 
+--[[
+    -- Read Proximity sensor (0= nothing detected, 1 = object detected)
+    local res = sim.readProximitySensor(proximity)
+
+    -- Check if possible to insert an new box
+    if (sim.getSimulationTime()-T_last_inserted &gt; T_insert) and not hasStopped then
+        insertBox()
+    end
+
+    -- If proximity sensor detects an object, stop the belt, stop inserting objects
+    if res == 1 and not hasStopped then
+        if boolList[1] then
+            sim.setScriptSimulationParameter(sim.handle_self,"conveyorBeltVelocity",0)
+            deltaTime = sim.getSimulationTime()-T_last_inserted
+            hasStopped = true
+        else
+            local box = table.remove(boxList,1)
+            local boxDummy = table.remove(boxDummyList,1)
+            table.remove(boolList,1)
+
+            sim.removeObject(box)
+            sim.removeObject(boxDummy)
+        end
+    end
+
+    -- If proximity sensor detects nothing and belt has stopped, start belt, continue inserting
+    if res == 0 and hasStopped then
+        sim.setScriptSimulationParameter(sim.handle_self,"conveyorBeltVelocity",beltSpeed)
+        hasStopped = false
+        T_last_inserted = sim.getSimulationTime()-deltaTime
+    end
+    
+]]--
+end
+function sysCall_sensing()
+    -- put your sensing code here
+end
+function sysCall_cleanup()
+    -- do some clean-up here
+end
+-- Convert a lua table into a lua syntactically correct string
+function table_to_string(tbl)
+    local result = "{"
+    for k, v in pairs(tbl) do
+        -- Check the key type (ignore any numerical keys - assume its an array)
+        if type(k) == "string" then
+            result = result.."[\""..k.."\"]".."="
+        end
+        -- Check the value type
+        if type(v) == "table" then
+            result = result..table_to_string(v)
+        elseif type(v) == "boolean" then
+            result = result..tostring(v)
+        else
+            v = round(v, 4)
+            result = result.."\""..v.."\""
+        end
+        result = result..","
+    end
+    -- Remove leading commas from the result
+    if result ~= "" then
+        result = result:sub(1, result:len()-1)
+    end
+    return result.."}"
+end
+function round(x, n)
+    n = math.pow(10, n or 0)
+    x = x * n
+    if x &gt;= 0 then x = math.floor(x + 0.5) else x = math.ceil(x - 0.5) end
+    return x / n
+end
+function insertBox()
+    -- Generate random numbers
+    local rand1 = math.random()
+    local rand2 = math.random()
+    local rand3 = math.random()
+    -- Generate random disturbances on position and orientation
+    local dx = (2*rand1-1)*0.1
+    local dy = (2*rand2-1)*0.1
+    local dphi = (2*rand3-1)*0.5
+    local disturbedCoordinates = {0,0,0}
+    disturbedCoordinates[1] = insertCoordinate[1]+dx
+    disturbedCoordinates[2] = insertCoordinate[2]+dy
+    disturbedCoordinates[3] = insertCoordinate[3]
+    -- Copy and paste box and boxDummy
+    local insertedObjects = sim.copyPasteObjects({box,boxDummy},0)
+    -- Update last inserted box time
+    T_last_inserted = sim.getSimulationTime()
+    -- Move and rotate
+    sim.setObjectPosition(insertedObjects[1],-1,disturbedCoordinates)
+    sim.setObjectOrientation(insertedObjects[1],-1,{0,0,dphi})
+    -- Store handles to boxes and dummies
+    table.insert(boxList,insertedObjects[1])
+    table.insert(boxDummyList,insertedObjects[2]) 
+    -- Decide if object is good or bad
+    local decision = math.random() 
+    if decision &lt;= goodPercentage then
+    -- Object is good, assign goodColor
+        sim.setShapeColor(insertedObjects[1],nil,sim.colorcomponent_ambient_diffuse,goodColor)
+        table.insert(boolList,true)
+    else
+    -- Object is bad, assign random color
+        sim.setShapeColor(insertedObjects[1],nil,sim.colorcomponent_ambient_diffuse,{rand1,rand2,rand3})
+        table.insert(boolList,false)
+    end
+end
+-- See the user manual or the available code snippets for additional callback functions and details
+</pre>
+<p></p><h2>W16</h2>
 <p><span>利用tkinter GUI介面slider控制uArm機械手臂</span></p>
 <p><span><img alt="" height="281" src="/images/60.png" width="500"/></span></p>
 <p><span><img alt="" height="281" src="/images/63.png" width="500"/></span></p>
@@ -685,8 +1100,21 @@ frameStops: {
 <h3>Online Exam</h3>
 <p><img alt="" height="281" src="/images/59.png" width="500"/></p>
 <p>1.已知左側綠色底座的uArm機械手臂，其基座座標原點位於絕對座標(1.0, 0.25, 0)<span>，</span>啟動模擬後green_suctionpad_frame座標原點則位於 (0.22859,0.26047,0.36576)<span>，</span>請列出運算式說明<span>，</span>啟動模擬後 joint1<span>，</span>joint2 與 joint3 分別以逆時針旋轉5度後<span>，</span>求green_suctionpad_frame的絕對座標值。</p>
-<p></p>
-<p>2.已知左側 uarm 前方的紅色方塊頂端中心座標值為(0.2, 0.4, 0.1)<span>，</span>請列出運算式說明左側 uarm 機械手臂的 joint1<span>，</span>joint2與joint3該如何旋轉才能讓end effector的吸盤末端中心點移動至紅色方塊頂端中心?</p><h1>Note</h1>
+<p><span>joint1，</span>L為順時針，K<span>為逆時針</span></p>
+<p><span>joint2，</span>J<span>為順時針，</span>H<span>為逆時針</span></p>
+<p><span>joint3，</span>G<span>為順時針，</span>F<span>為逆時針</span></p>
+<p><span>joint1，<span>joint2與joint3分別以逆時針旋轉5度後的green_suctionpad_frame絕對座標值</span></span></p>
+<p><span>(0.2695,0.1963,0.3815)</span></p>
+<p><span><img caption="false" height="281" src="/images/70.png" width="500"/></span></p>
+<p><span><img alt="" height="281" src="/images/71.png" width="500"/></span></p>
+<p><span></span></p>
+<p>2.已知左側 uarm 前方的紅色方塊頂端中心座標值為(0.2, 0.4, 0.1)<span>，</span>請列出運算式說明左側 uarm 機械手臂的 joint1<span>，</span>joint2與joint3該如何旋轉才能讓end effector的吸盤末端中心點移動至紅色方塊頂端中心?</p>
+<p><span>joint1，I</span>為順時針，U<span>為逆時針</span></p>
+<p><span>joint2，Y</span><span>為順時針，T</span><span>為逆時針</span></p>
+<p><span>joint3，R</span><span>為順時針，E</span><span>為逆時針</span></p>
+<p><span>joint1先按下I順時針10度，joint2再來<span>Y順時針27度調整，joint3為<span>R順時針34度就可以接近紅色方塊的中心</span></span></span></p>
+<p><img alt="" height="281" src="/images/66.png" width="500"/></p>
+<p><img alt="" height="281" src="/images/72.png" width="500"/></p><h1>Note</h1>
 <h2>建立倉儲</h2>
 <p>先進去老師倉儲的cmsimde site<span> </span></p>
 <p><img caption="false" height="281" src="https://a40923101.github.io/cd2022/images/6.png" width="500"/></p>
@@ -928,8 +1356,4 @@ frameStops: {
 <p>這方面花費較多的時間去研究</p>
 <p>最終還是有完成三軸作動</p>
 <p></p>
-<h1>Online Exam</h1>
-<p><img alt="" height="281" src="/images/59.png" width="500"/></p>
-<p>1.已知左側綠色底座的uArm機械手臂，其基座座標原點位於絕對座標(1.0, 0.25, 0)<span>，</span>啟動模擬後green_suctionpad_frame座標原點則位於 (0.22859,0.26047,0.36576)<span>，</span>請列出運算式說明<span>，</span>啟動模擬後 joint1<span>，</span>joint2 與 joint3 分別以逆時針旋轉5度後<span>，</span>求green_suctionpad_frame的絕對座標值。</p>
-<p></p>
-<p>2.已知左側 uarm 前方的紅色方塊頂端中心座標值為(0.2, 0.4, 0.1)<span>，</span>請列出運算式說明左側 uarm 機械手臂的 joint1<span>，</span>joint2與joint3該如何旋轉才能讓end effector的吸盤末端中心點移動至紅色方塊頂端中心?</p></div>
+</div>
